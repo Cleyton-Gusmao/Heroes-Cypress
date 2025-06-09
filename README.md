@@ -20,13 +20,13 @@ As estratégias de automação foram criadas com foco em testes de **ponta a pon
 **1.** **Clone o repositório na sua maquina**
 
 ```bash
-git clone https://github.com/ElizabethGomes-QAEngineer/Cypress-Heroes.git
+git clone https://github.com/Cleyton-Gusmao/Heroes-Cypress.git
 ```
 
 **2.** **Navegue até o diretório do projeto**
 
 ```bash
-cd cypress-heroes
+cd Heroes-Cypress/
 ```
 
 **3.** **Instale as dependências do projeto**
