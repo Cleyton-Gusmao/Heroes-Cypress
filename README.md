@@ -51,7 +51,14 @@ npm run dev
 >
 
 
-**6.** **Abra outro Terminal e Execute o Cypress para rodar os testes**
+**6.** **Abra outro Terminal e acesse a pasta client**
+
+```bash
+cd client/
+```
+
+
+**7.** **Execute o Cypress para rodar os testes**
 
 abrir o Cypress com interface gráfica (GUI - Graphical User Interface)
 
