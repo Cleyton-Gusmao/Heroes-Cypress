@@ -51,14 +51,7 @@ npm run dev
 >
 
 
-**6.** **Abra outro Terminal e acesse a pasta client**
-
-```bash
-cd client/
-```
-
-
-**7.** **Execute o Cypress para rodar os testes**
+**6.** **Abra outro Terminal e execute o Cypress para rodar os testes**
 
 abrir o Cypress com interface gráfica (GUI - Graphical User Interface)
 
@@ -67,5 +60,5 @@ npx cypress open
 ```
 
 > **NOTA:**
-> Acesse na pasta **client** depois **cypress** e **Pages** dentro de **e2e** estão os **specs** deste projeto.
->  
+> Os testes se encontram no caminho **client > cypress > tests > e2e**
+>
