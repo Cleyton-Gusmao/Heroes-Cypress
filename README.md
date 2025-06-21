@@ -12,9 +12,9 @@ As estratégias de automação foram criadas com foco em testes de **ponta a pon
 - 🔸 **Administrador:** possui todas as permissões do usuário comum, além de poder **criar**, **editar** e **excluir** heróis.
 
 
-### **[Link dos casos de teste](https://github.com/Cleyton-Gusmao/Heroes-Cypress/tree/main/client/test-cases/login)**
+### **[Link dos casos de teste](https://github.com/Cleyton-Gusmao/Heroes-Cypress/tree/main/cypress/test-cases/login)**
 > **NOTA:**
-> Os casos de testes estão localizados no caminho: **Heroes-Cypress/client/test-cases/login/**
+> Os casos de testes estão localizados no caminho: **Heroes-Cypress/cypress/test-cases/**
 
 ## Passo a Passo para Instalação
 
@@ -61,5 +61,5 @@ npx cypress open
 ```
 
 > **NOTA:**
-> Os testes se encontram no caminho: **client/cypress/tests/e2e**
+> Os testes se encontram no caminho: **cypress/tests/**
 >
