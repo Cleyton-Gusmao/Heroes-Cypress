@@ -24,7 +24,7 @@
 O modal de login deve sumir, permanecendo na tela de heróis e o botão "Login" deve ser alterado para "Logout".  
 
 ## Evidência:
-![Login com sucesso](../evidencias/login-sucesso.png)  
+![Login com sucesso](../evidencias/login-sucesso-adm.png)  
 
 ## Steps & Results:
 **Given** que o usuário acessou a página de login do sistema  

@@ -22,7 +22,7 @@
 Deve ser exibida a mensagem "Invalid email or password" e o usuário deve permanecer na tela de login.  
 
 ## Evidência:
-![Descrição da imagem](../evidencias/senha-invalida.png)  
+![Descrição da imagem](../evidencias/email-invalido.png)  
 
 ## Steps & Results:
 **Given** o usuário acessou a página de login do sistema  
