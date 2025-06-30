@@ -4,6 +4,8 @@
 
 Aplicação desenvolvida para simular um sistema onde usuários podem realizar login e interagir com heróis fictícios.
 
+### **[Link do repositório original](https://github.com/cypress-io/cypress-heroes)**
+
 As estratégias de automação foram criadas com foco em testes de **ponta a ponta (E2E)**, utilizando **estruturas reutilizáveis** para garantir **eficiência**, **qualidade** e **facilidade de manutenção** dos testes.
 
 ### Perfis de Usuário
@@ -63,3 +65,11 @@ npx cypress open
 > **NOTA:**
 > Os testes se encontram no caminho: **cypress/tests/**
 >
+
+
+**Redefinição de banco de dados**
+O banco de dados é inicializado pelo script server/prisma/seed.ts durante a configuração do aplicativo. Caso deseje redefini-lo para o estado inicial a qualquer momento, execute o seguinte comando:
+
+```bash
+npm run resetdb
+```
