@@ -1,46 +1,44 @@
 import LoginPage from '../../support/pages/loginPage'
 
-const loginPage = new LoginPage()
-
 describe('Login com sucesso', () => {
   it('Login usuário Padrão', () => {
-    loginPage.loginUser(
+    LoginPage.loginUser(
       'test@test.com',
       'test123'
     )
   })
 
   it('Login usuário Admin', () => {
-    loginPage.loginUser(
+    LoginPage.loginUser(
       'admin@test.com',
       'test123'
     )
-    loginPage.userAdmin()
+    LoginPage.isUserAdmin()
   })
 })
 
 describe('Login inválido', () => {
   it('Login com email inválido', () => {
-    loginPage.loginUser(
+    LoginPage.loginUser(
       'errado@test.com',
       'test123'
     )
-    loginPage.invalidUser()
+    LoginPage.isInvalidUser()
   })
 
   it('Login com senha inválida', () => {
-    loginPage.loginUser(
+    LoginPage.loginUser(
       'admin@test.com',
       'errado'
     )
-    loginPage.invalidUser()
+    LoginPage.isInvalidUser()
   })
 
   it('login com e-mail e senha inválida', () => {
-    loginPage.loginUser(
+    LoginPage.loginUser(
       'errado@test.com',
       'errado'
     )
-    loginPage.invalidUser()
+    LoginPage.isInvalidUser()
   })
 })

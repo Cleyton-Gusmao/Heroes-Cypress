@@ -7,12 +7,12 @@ const selectors = {
     signInButton: ".text-white",
     editButton: "[data-cy='pencil']",
     trashButton: "[data-cy='trash']",
-    textLoginUnsucessful: ".text-red-500"
+    textLoginUnsucessful: ".text-red-500",
 }
 
-class LoginPage {
+abstract class LoginPage {
 
-    loginUser(email: string, senha: string) {
+    static loginUser(email: string, senha: string) {
         cy.visit('http://localhost:3000')
 
         cy.get(selectors.loginButton).click()
@@ -20,17 +20,20 @@ class LoginPage {
         cy.get(selectors.emailField).type(email)
         cy.get(selectors.senhaField).type(senha)
         cy.get(selectors.signInButton).click()
+        cy.log('Login Realizado com sucesso!')
+        cy.location('pathname').should('equal', '/heroes')
     }
 
-    userAdmin() {
+    static isUserAdmin() {
         cy.get(selectors.editButton)
         cy.get(selectors.trashButton)
     }
 
-    invalidUser() {
+    static isInvalidUser() {
         cy.get(selectors.textLoginUnsucessful)
         cy.get(selectors.loginModal)
     }
 }
+
 
 export default LoginPage
