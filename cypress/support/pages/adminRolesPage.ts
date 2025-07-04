@@ -1,15 +1,16 @@
 const selectors = {
-    newHeroButton: "[href='/heroes/new']",
+    newHeroButton: "nav a[href='/heroes/new'] button:contains('Create New Hero')",
     nameField: "[data-cy='nameInput']",
     priceField: "[data-cy='priceInput']",
     fansField: "[data-cy='fansInput']",
     savesField: "[data-cy='savesInput']",
     powersSelector: "[data-cy='powersSelect']",
     avatarFile: "[data-cy='avatarFile']",
-    submitButtonNewHero: "button",
+    submitButtonNewHero: "form[novalidate] button:contains('Submit')",
     trashButton: "[data-cy='trash']",
-    modalConfirmDeleteHero: ".rounded-md",
-    optionDeleteHero: ".text-white"
+    modalDeleteHero: "div.modal.shadow-lg",
+    buttonDeleteHero: "div button:contains('Yes')", // melhorar seletor
+    powerName: "[data-cy='powers']"
 }
 
 abstract class AdminRoles {
@@ -23,16 +24,20 @@ abstract class AdminRoles {
         cy.get(selectors.savesField).type(saves)
         cy.get(selectors.powersSelector).select(power)
         cy.get(selectors.avatarFile).selectFile(avatar)
-        cy.get(selectors.submitButtonNewHero).eq(2).click()
+        cy.get(selectors.submitButtonNewHero).click()
         cy.log('Novo héroi criado com sucesso!')
     }
-    
+
+    static validateNewHero(powerHero: string) {
+        cy.get(selectors.powerName).last().should('contain', powerHero)
+    }
+
     static deleteHero() {
         cy.location('pathname').should('equal', '/heroes')
         cy.get(selectors.trashButton).last().click()
-        cy.get(selectors.modalConfirmDeleteHero)
-        cy.get(selectors.optionDeleteHero).eq(1).click()
-        cy.log('Herói apagado com sucesso!')
+        cy.get(selectors.modalDeleteHero)
+        cy.get(selectors.buttonDeleteHero).click()
+        cy.log('Herói excluído com sucesso!')
     }
 
 }

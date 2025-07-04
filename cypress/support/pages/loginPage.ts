@@ -1,13 +1,12 @@
 
 const selectors = {
-    loginModal: ".modal",
-    loginButton: "nav",
+    loginModal: "div.modal.shadow-lg",
+    loginButton: "nav button:contains('Login')",
     emailField: "[data-cy='email']",
-    senhaField: "[data-cy='password']",
-    signInButton: ".text-white",
+    passwordField: "[data-cy='password']",
+    signInButton: "form[novalidate] button:contains('Sign in')",
     editButton: "[data-cy='pencil']",
-    trashButton: "[data-cy='trash']",
-    textLoginUnsucessful: ".text-red-500",
+    trashButton: "[data-cy='trash']"
 }
 
 abstract class LoginPage {
@@ -18,7 +17,7 @@ abstract class LoginPage {
         cy.get(selectors.loginButton).click()
         cy.get(selectors.loginModal)
         cy.get(selectors.emailField).type(email)
-        cy.get(selectors.senhaField).type(senha)
+        cy.get(selectors.passwordField).type(senha)
         cy.get(selectors.signInButton).click()
         cy.log('Login Realizado com sucesso!')
         cy.location('pathname').should('equal', '/heroes')
@@ -30,8 +29,10 @@ abstract class LoginPage {
     }
 
     static isInvalidUser() {
-        cy.get(selectors.textLoginUnsucessful)
+        cy.contains("Invalid email or password")
         cy.get(selectors.loginModal)
+        cy.get(selectors.loginButton)
+        cy.get(selectors.signInButton)
     }
 }
 

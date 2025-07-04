@@ -16,6 +16,7 @@ describe('Criando novos heróis', () => {
             0,
             'cypress/fixtures/img/heroi1.png'
         )
+        AdminRoles.validateNewHero('Flying')
     })
 
     it('Herói com o poder de Bola de Fogo', () => {
@@ -26,12 +27,13 @@ describe('Criando novos heróis', () => {
         LoginPage.isUserAdmin()
         AdminRoles.createNewHero(
             'Super 1',
-            '1',
+            '16',
             '1',
             '1',
             1,
             'cypress/fixtures/img/heroi2.png'
         )
+        AdminRoles.validateNewHero('Fireball')
     })
 
     it('Herói com o poder de Super Força', () => {
@@ -42,12 +44,13 @@ describe('Criando novos heróis', () => {
         LoginPage.isUserAdmin()
         AdminRoles.createNewHero(
             'Super 2',
-            '2',
+            '25',
             '2',
             '2',
             2,
             'cypress/fixtures/img/heroi3.png'
         )
+        AdminRoles.validateNewHero('Super Strength')
     })
 
     it('Herói com o poder de Invisibilidade', () => {
@@ -58,12 +61,13 @@ describe('Criando novos heróis', () => {
         LoginPage.isUserAdmin()
         AdminRoles.createNewHero(
             'Super 3',
-            '3',
+            '38',
             '3',
             '3',
             3,
             'cypress/fixtures/img/heroi4.png'
         )
+        AdminRoles.validateNewHero('Invisibility')
     })
 
     it('Herói com o poder de Telecinesia', () => {
@@ -74,12 +78,13 @@ describe('Criando novos heróis', () => {
         LoginPage.isUserAdmin()
         AdminRoles.createNewHero(
             'Super 4',
-            '4',
+            '42',
             '4',
             '4',
             4,
             'cypress/fixtures/img/heroi5.png'
         )
+        AdminRoles.validateNewHero('Telekinesis')
     })
 
     it('Herói com o poder de Controle da Mente', () => {
@@ -90,12 +95,13 @@ describe('Criando novos heróis', () => {
         LoginPage.isUserAdmin()
         AdminRoles.createNewHero(
             'Super 5',
-            '5',
+            '51',
             '5',
             '5',
             5,
             'cypress/fixtures/img/heroi6.png'
         )
+        AdminRoles.validateNewHero('Mind Control')
     })
 
     it('Herói com o poder de Super Audição', () => {
@@ -106,12 +112,13 @@ describe('Criando novos heróis', () => {
         LoginPage.isUserAdmin()
         AdminRoles.createNewHero(
             'Super 6',
-            '6',
+            '69',
             '6',
             '6',
             6,
             'cypress/fixtures/img/heroi7.png'
         )
+        AdminRoles.validateNewHero('Super Hearing')
     })
 
     it('Herói com o poder de Super Logística', () => {
@@ -122,12 +129,13 @@ describe('Criando novos heróis', () => {
         LoginPage.isUserAdmin()
         AdminRoles.createNewHero(
             'Super 7',
-            '7',
+            '78',
             '7',
             '7',
             7,
             'cypress/fixtures/img/heroi8.png'
         )
+        AdminRoles.validateNewHero('Super Logistics')
     })
 
     it('Herói com o poder de Super Velocidade', () => {
@@ -138,17 +146,18 @@ describe('Criando novos heróis', () => {
         LoginPage.isUserAdmin()
         AdminRoles.createNewHero(
             'Super 8',
-            '8',
+            '83',
             '8',
             '8',
             8,
             'cypress/fixtures/img/heroi9.png'
         )
+        AdminRoles.validateNewHero('Super Speed')
     })
 
 })
 
-describe('Editando heróis', () => {
+describe.skip('Editando heróis', () => {
     it('Editando usuário', () => {
 
     })

@@ -50,7 +50,7 @@ npm run setup
 npm run dev
 ```
 
->**NOTA:** Este Projeto é acessivel em http://localhost:3000.
+>Este Projeto é acessivel em http://localhost:3000.
 >
 
 
@@ -62,11 +62,12 @@ abrir o Cypress com interface gráfica (GUI - Graphical User Interface)
 npx cypress open
 ```
 
-> **NOTA:** Os testes se encontram no caminho: **cypress/tests/**
+> Os testes se encontram no caminho: **cypress/tests/**
 >  
 
 
 **Redefinição de banco de dados**  
+
 O banco de dados é inicializado pelo script server/prisma/seed.ts durante a configuração do aplicativo. Caso deseje redefini-lo para o estado inicial a qualquer momento, execute o seguinte comando:
 
 ```bash
