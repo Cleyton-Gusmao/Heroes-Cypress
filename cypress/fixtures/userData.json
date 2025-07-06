@@ -1,0 +1,82 @@
+{
+    "userAdmin": {
+        "email": "admin@test.com",
+        "password": "test123"
+    },
+    "userStandard": {
+        "email": "test@test.com",
+        "password": "test123"
+    },
+    "superHeroiVoo": {
+        "name": "Super herói com poder de Vôo",
+        "price": "0",
+        "fans": "0",
+        "saves": "0",
+        "power": 0,
+        "avatar": "cypress/fixtures/img/heroi1.png"
+    },
+    "superHeroiFireBall": {
+        "name": "Super herói com Bola de Fogo",
+        "price": "16",
+        "fans": "1",
+        "saves": "1",
+        "power": 1,
+        "avatar": "cypress/fixtures/img/heroi2.png"
+    },
+    "superHeroiStrength": {
+        "name": "Super herói com Super Força",
+        "price": "25",
+        "fans": "2",
+        "saves": "2",
+        "power": 2,
+        "avatar": "cypress/fixtures/img/heroi3.png"
+    },
+    "superHeroiInvisibility": {
+        "name": "Super herói com poder de invisibilidade",
+        "price": "3",
+        "fans": "3",
+        "saves": "3",
+        "power": 3,
+        "avatar": "cypress/fixtures/img/heroi4.png"
+    },
+    "superHeroiTelekinesis": {
+        "name": "Super herói com poder de Telecinesia",
+        "price": "42",
+        "fans": "4",
+        "saves": "4",
+        "power": 4,
+        "avatar": "cypress/fixtures/img/heroi5.png"
+    },
+    "superHeroiMindControl": {
+        "name": "Herói com o poder de Controle da Mente",
+        "price": "52",
+        "fans": "5",
+        "saves": "5",
+        "power": 5,
+        "avatar": "cypress/fixtures/img/heroi6.png"
+    },
+    "superHeroiHearing": {
+        "name": "Herói com o poder de Super Audição",
+        "price": "69",
+        "fans": "6",
+        "saves": "6",
+        "power": 6,
+        "avatar": "cypress/fixtures/img/heroi7.png"
+    },
+    "superHeroiLogistics": {
+        "name": "Herói com o poder de Super Logística",
+        "price": "78",
+        "fans": "7",
+        "saves": "7",
+        "power": 7,
+        "avatar": "cypress/fixtures/img/heroi8.png"
+    },
+    "superHeroiSuperSpeed": {
+        "name": "Herói com o poder de Super Velocidade",
+        "price": "8",
+        "fans": "8",
+        "saves": "8",
+        "power": 8,
+        "avatar": "cypress/fixtures/img/heroi9.png"
+    }
+}

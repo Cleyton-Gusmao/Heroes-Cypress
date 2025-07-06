@@ -1,156 +1,128 @@
 import LoginPage from "../../support/pages/loginPage"
 import AdminRoles from "../../support/pages/adminRolesPage"
+import userData from "../../fixtures/userData.json"
 
 describe('Criando novos heróis', () => {
+    beforeEach(() => {
+        cy.session('admin-session', () => {
+            LoginPage.loginUser(userData.userAdmin.email, userData.userAdmin.password)
+            LoginPage.isUserAdmin()
+        })
+    })
+
     it('Herói com o poder de Vôo', () => {
-        LoginPage.loginUser(
-            'admin@test.com',
-            'test123'
-        )
-        LoginPage.isUserAdmin()
+        LoginPage.visitSistem()
         AdminRoles.createNewHero(
-            'Super 0',
-            '0',
-            '0',
-            '0',
-            0,
-            'cypress/fixtures/img/heroi1.png'
+            userData.superHeroiVoo.name,
+            userData.superHeroiVoo.price,
+            userData.superHeroiVoo.fans,
+            userData.superHeroiVoo.saves,
+            userData.superHeroiVoo.power,
+            userData.superHeroiVoo.avatar
         )
         AdminRoles.validateNewHero('Flying')
     })
 
     it('Herói com o poder de Bola de Fogo', () => {
-        LoginPage.loginUser(
-            'admin@test.com',
-            'test123'
-        )
-        LoginPage.isUserAdmin()
+        LoginPage.visitSistem()
         AdminRoles.createNewHero(
-            'Super 1',
-            '16',
-            '1',
-            '1',
-            1,
-            'cypress/fixtures/img/heroi2.png'
+            userData.superHeroiFireBall.name,
+            userData.superHeroiFireBall.price,
+            userData.superHeroiFireBall.fans,
+            userData.superHeroiFireBall.saves,
+            userData.superHeroiFireBall.power,
+            userData.superHeroiFireBall.avatar
         )
         AdminRoles.validateNewHero('Fireball')
     })
 
     it('Herói com o poder de Super Força', () => {
-        LoginPage.loginUser(
-            'admin@test.com',
-            'test123'
-        )
-        LoginPage.isUserAdmin()
+        LoginPage.visitSistem()
         AdminRoles.createNewHero(
-            'Super 2',
-            '25',
-            '2',
-            '2',
-            2,
-            'cypress/fixtures/img/heroi3.png'
+            userData.superHeroiStrength.name,
+            userData.superHeroiStrength.price,
+            userData.superHeroiStrength.fans,
+            userData.superHeroiStrength.saves,
+            userData.superHeroiStrength.power,
+            userData.superHeroiStrength.avatar
         )
         AdminRoles.validateNewHero('Super Strength')
     })
 
     it('Herói com o poder de Invisibilidade', () => {
-        LoginPage.loginUser(
-            'admin@test.com',
-            'test123'
-        )
-        LoginPage.isUserAdmin()
+        LoginPage.visitSistem()
         AdminRoles.createNewHero(
-            'Super 3',
-            '38',
-            '3',
-            '3',
-            3,
-            'cypress/fixtures/img/heroi4.png'
+            userData.superHeroiInvisibility.name,
+            userData.superHeroiInvisibility.price,
+            userData.superHeroiInvisibility.fans,
+            userData.superHeroiInvisibility.saves,
+            userData.superHeroiInvisibility.power,
+            userData.superHeroiInvisibility.avatar
         )
         AdminRoles.validateNewHero('Invisibility')
     })
 
     it('Herói com o poder de Telecinesia', () => {
-        LoginPage.loginUser(
-            'admin@test.com',
-            'test123'
-        )
-        LoginPage.isUserAdmin()
+        LoginPage.visitSistem()
         AdminRoles.createNewHero(
-            'Super 4',
-            '42',
-            '4',
-            '4',
-            4,
-            'cypress/fixtures/img/heroi5.png'
+            userData.superHeroiTelekinesis.name,
+            userData.superHeroiTelekinesis.price,
+            userData.superHeroiTelekinesis.fans,
+            userData.superHeroiTelekinesis.saves,
+            userData.superHeroiTelekinesis.power,
+            userData.superHeroiTelekinesis.avatar
         )
         AdminRoles.validateNewHero('Telekinesis')
     })
 
     it('Herói com o poder de Controle da Mente', () => {
-        LoginPage.loginUser(
-            'admin@test.com',
-            'test123'
-        )
-        LoginPage.isUserAdmin()
+        LoginPage.visitSistem()
         AdminRoles.createNewHero(
-            'Super 5',
-            '51',
-            '5',
-            '5',
-            5,
-            'cypress/fixtures/img/heroi6.png'
+            userData.superHeroiMindControl.name,
+            userData.superHeroiMindControl.price,
+            userData.superHeroiMindControl.fans,
+            userData.superHeroiMindControl.saves,
+            userData.superHeroiMindControl.power,
+            userData.superHeroiMindControl.avatar
         )
         AdminRoles.validateNewHero('Mind Control')
     })
 
     it('Herói com o poder de Super Audição', () => {
-        LoginPage.loginUser(
-            'admin@test.com',
-            'test123'
-        )
-        LoginPage.isUserAdmin()
+        LoginPage.visitSistem()
         AdminRoles.createNewHero(
-            'Super 6',
-            '69',
-            '6',
-            '6',
-            6,
-            'cypress/fixtures/img/heroi7.png'
+            userData.superHeroiHearing.name,
+            userData.superHeroiHearing.price,
+            userData.superHeroiHearing.fans,
+            userData.superHeroiHearing.saves,
+            userData.superHeroiHearing.power,
+            userData.superHeroiHearing.avatar
         )
         AdminRoles.validateNewHero('Super Hearing')
     })
 
     it('Herói com o poder de Super Logística', () => {
-        LoginPage.loginUser(
-            'admin@test.com',
-            'test123'
-        )
-        LoginPage.isUserAdmin()
+        LoginPage.visitSistem()
         AdminRoles.createNewHero(
-            'Super 7',
-            '78',
-            '7',
-            '7',
-            7,
-            'cypress/fixtures/img/heroi8.png'
+            userData.superHeroiLogistics.name,
+            userData.superHeroiLogistics.price,
+            userData.superHeroiLogistics.fans,
+            userData.superHeroiLogistics.saves,
+            userData.superHeroiLogistics.power,
+            userData.superHeroiLogistics.avatar
         )
         AdminRoles.validateNewHero('Super Logistics')
     })
 
     it('Herói com o poder de Super Velocidade', () => {
-        LoginPage.loginUser(
-            'admin@test.com',
-            'test123'
-        )
-        LoginPage.isUserAdmin()
+        LoginPage.visitSistem()
         AdminRoles.createNewHero(
-            'Super 8',
-            '83',
-            '8',
-            '8',
-            8,
-            'cypress/fixtures/img/heroi9.png'
+            userData.superHeroiSuperSpeed.name,
+            userData.superHeroiSuperSpeed.price,
+            userData.superHeroiSuperSpeed.fans,
+            userData.superHeroiSuperSpeed.saves,
+            userData.superHeroiSuperSpeed.power,
+            userData.superHeroiSuperSpeed.avatar
         )
         AdminRoles.validateNewHero('Super Speed')
     })
@@ -166,8 +138,8 @@ describe.skip('Editando heróis', () => {
 describe('Excluindo heróis', () => {
     it('Exclusão dos hérois criados', () => {
         LoginPage.loginUser(
-            'admin@test.com',
-            'test123'
+            userData.userAdmin.email,
+            userData.userAdmin.password
         )
         LoginPage.isUserAdmin()
         for (let i = 7; i <= 15; i++) {

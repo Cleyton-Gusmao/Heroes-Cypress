@@ -1,17 +1,18 @@
 import LoginPage from '../../support/pages/loginPage'
+import userData from '../../fixtures/userData.json'
 
 describe('Login com sucesso', () => {
   it('Login usuário Padrão', () => {
     LoginPage.loginUser(
-      'test@test.com',
-      'test123'
+      userData.userStandard.email,
+      userData.userStandard.password
     )
   })
 
   it('Login usuário Admin', () => {
     LoginPage.loginUser(
-      'admin@test.com',
-      'test123'
+      userData.userAdmin.email,
+      userData.userAdmin.password
     )
     LoginPage.isUserAdmin()
   })
@@ -21,14 +22,14 @@ describe('Login inválido', () => {
   it('Login com email inválido', () => {
     LoginPage.loginUser(
       'errado@test.com',
-      'test123'
+      userData.userStandard.password
     )
     LoginPage.isInvalidUser()
   })
 
   it('Login com senha inválida', () => {
     LoginPage.loginUser(
-      'admin@test.com',
+      userData.userAdmin.email,
       'errado'
     )
     LoginPage.isInvalidUser()

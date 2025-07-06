@@ -6,10 +6,16 @@ const selectors = {
     passwordField: "[data-cy='password']",
     signInButton: "form[novalidate] button:contains('Sign in')",
     editButton: "[data-cy='pencil']",
-    trashButton: "[data-cy='trash']"
+    trashButton: "[data-cy='trash']",
+    likeButton: "[data-cy='like']",
+    moneyButton: "[data-cy='money']"
 }
 
 abstract class LoginPage {
+
+    static visitSistem() {
+        cy.visit('http://localhost:3000')
+    }
 
     static loginUser(email: string, senha: string) {
         cy.visit('http://localhost:3000')
@@ -21,6 +27,8 @@ abstract class LoginPage {
         cy.get(selectors.signInButton).click()
         cy.log('Login Realizado com sucesso!')
         cy.location('pathname').should('equal', '/heroes')
+        cy.get(selectors.likeButton)
+        cy.get(selectors.moneyButton)
     }
 
     static isUserAdmin() {

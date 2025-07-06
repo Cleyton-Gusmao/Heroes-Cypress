@@ -9,7 +9,7 @@ const selectors = {
     submitButtonNewHero: "form[novalidate] button:contains('Submit')",
     trashButton: "[data-cy='trash']",
     modalDeleteHero: "div.modal.shadow-lg",
-    buttonDeleteHero: "div button:contains('Yes')", // melhorar seletor
+    buttonDeleteHero: "div button:contains('Yes')",
     powerName: "[data-cy='powers']"
 }
 
