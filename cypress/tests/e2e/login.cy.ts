@@ -42,4 +42,23 @@ describe('Login inválido', () => {
     )
     LoginPage.isInvalidUser()
   })
+
+})
+
+describe('Deslogue conta', () => {
+  it('Deslogando usuário comum', () => {
+    LoginPage.loginUser(
+      userData.userStandard.email,
+      userData.userStandard.password
+    )
+    LoginPage.logoutUser()
+  })
+
+  it('Deslogando usuário Admin', () => {
+    LoginPage.loginUser(
+      userData.userAdmin.email,
+      userData.userAdmin.password
+    )
+    LoginPage.logoutUser()
+  })
 })

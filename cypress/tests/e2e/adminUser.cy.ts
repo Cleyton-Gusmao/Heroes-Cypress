@@ -5,7 +5,9 @@ import userData from "../../fixtures/userData.json"
 describe('Criando novos heróis', () => {
     beforeEach(() => {
         cy.session('admin-session', () => {
-            LoginPage.loginUser(userData.userAdmin.email, userData.userAdmin.password)
+            LoginPage.loginUser(
+                userData.userAdmin.email,
+                userData.userAdmin.password)
             LoginPage.isUserAdmin()
         })
     })
@@ -129,12 +131,6 @@ describe('Criando novos heróis', () => {
 
 })
 
-describe.skip('Editando heróis', () => {
-    it('Editando usuário', () => {
-
-    })
-})
-
 describe('Excluindo heróis', () => {
     it('Exclusão dos hérois criados', () => {
         LoginPage.loginUser(
@@ -147,4 +143,42 @@ describe('Excluindo heróis', () => {
         }
 
     })
+})
+
+describe('Editando heróis', () => {
+
+    beforeEach(() => {
+        cy.session('admin-session', () => {
+            LoginPage.loginUser(
+                userData.userAdmin.email,
+                userData.userAdmin.password
+            )
+            LoginPage.isUserAdmin()
+        })
+    })
+
+
+    it('Editando Herói', () => {
+        LoginPage.visitSistem()
+        AdminRoles.createNewHero(
+            userData.superHeroiSuperSpeed.name,
+            userData.superHeroiSuperSpeed.price,
+            userData.superHeroiSuperSpeed.fans,
+            userData.superHeroiSuperSpeed.saves,
+            userData.superHeroiSuperSpeed.power,
+            userData.superHeroiSuperSpeed.avatar
+        )
+        AdminRoles.editHero(
+            userData.superHeroiTelekinesis.name,
+            userData.superHeroiTelekinesis.price,
+            userData.superHeroiTelekinesis.fans,
+            userData.superHeroiTelekinesis.saves,
+            userData.superHeroiTelekinesis.power
+        )
+    })
+
+    it('Exclusão do usuário editado', () => {
+        LoginPage.visitSistem()
+        AdminRoles.deleteHeroEdit()
+    });
 })
