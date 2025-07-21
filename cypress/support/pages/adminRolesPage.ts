@@ -85,7 +85,6 @@ abstract class AdminRoles {
         cy.get(selectorsAdminRoles.submitButtonNewHero).click()
         cy.get(selectorsAdminRoles.powerNameHeroCard).last().should('contain', 'Telekinesis')
         cy.log('Poder do herói alterado com sucesso!')
-
         cy.get(selectorsAdminRoles.editButton).last().click()
 
     }
