@@ -1,24 +1,4 @@
-const selectorsAdminRoles = {
-    newHeroButton: "nav a[href='/heroes/new'] button:contains('Create New Hero')",
-    nameField: "[data-cy='nameInput']",
-    priceField: "[data-cy='priceInput']",
-    fansField: "[data-cy='fansInput']",
-    savesField: "[data-cy='savesInput']",
-    powersSelector: "[data-cy='powersSelect']",
-    avatarFile: "[data-cy='avatarFile']",
-    submitButtonNewHero: "form[novalidate] button:contains('Submit')",
-    trashButton: "[data-cy='trash']",
-    modalDeleteHero: "div.modal.shadow-lg",
-    buttonDeleteHero: "div button:contains('Yes')",
-    powerNameHeroCard: "[data-cy='powers']",
-    editButton: "[data-cy='pencil']",
-    nameHeroCard: "[data-cy='name']",
-    priceHeroCard: "[data-cy='price']",
-    fansHeroCard: "[data-cy='fans']",
-    savesHeroCard: "[data-cy='saves']",
-    avatarHeroCard: "[data-cy='hero-card'] img.rounded-full",
-    deleteHeroButton: "div button:contains('Delete Hero')"
-}
+import { selectorsAdminRoles } from "../selectors/selectorsAdminRoles";
 
 abstract class AdminRoles {
 

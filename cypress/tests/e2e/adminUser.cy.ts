@@ -31,7 +31,8 @@ describe('Criando novos heróis', () => {
         cy.session('admin-session', () => {
             LoginPage.loginUser(
                 userData.userAdmin.email,
-                userData.userAdmin.password)
+                userData.userAdmin.password
+            )
             LoginPage.isUserAdmin()
         })
     })
@@ -98,5 +99,6 @@ describe('Editando heróis', () => {
     it('Exclusão do usuário editado', () => {
         LoginPage.visitSistem()
         AdminRoles.deleteHeroEdit()
+        LoginPage.visitSistem()
     })
 })
