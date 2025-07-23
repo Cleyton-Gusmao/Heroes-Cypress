@@ -4,5 +4,6 @@ export const selectorsStandardUser = {
     likeButton: "[data-cy='like']",
     moneyButton: "[data-cy='money']",
     modalConfirm: ".modal-container div.modal",
-    buttonConfirm: ".modal-container button:contains('Yes')"
+    buttonConfirm: ".modal-container button:contains('Yes')",
+    buttonOkModal: ".modal-container button:contains('Ok')"
 }
