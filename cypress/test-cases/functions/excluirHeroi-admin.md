@@ -52,9 +52,9 @@ Ao realizar a exclusão do herói, o mesmo deve deixar de ser exibido na listage
 
 ## Evidência
 
-![Exclusão herói](../evidencias/delete-Hero.png)
+![Exclusão herói página inicial (card)](../evidencias/delete-hero-card.png)
 
-
+![Exclusão herói via tela de edição](../evidencias/delete-hero-edit.png)
 
 ## Steps & Results (Gherkin)
 
@@ -84,3 +84,4 @@ Ao realizar a exclusão do herói, o mesmo deve deixar de ser exibido na listage
 ## Status
 
 **APROVADO**
+

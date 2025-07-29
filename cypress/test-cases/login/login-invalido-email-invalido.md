@@ -51,4 +51,4 @@ Deve ser exibida a mensagem "Invalid email or password" e o usuário deve perman
 
 ## Status
 
-**Aprovado**  
+**APROVADO**  

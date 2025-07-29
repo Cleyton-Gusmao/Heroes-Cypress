@@ -67,3 +67,4 @@ O herói editado deve ser exibido na listagem de heróis com as seguintes inform
 ## Status
 
 **APROVADO**
+

@@ -54,3 +54,4 @@ O número de contratações no card do herói que o usuário contratou deve aume
 ## Status
 
 **APROVADO**
+

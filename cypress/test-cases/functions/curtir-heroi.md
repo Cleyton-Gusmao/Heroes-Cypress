@@ -51,3 +51,4 @@ O número de curtidas no card do herói que o usuário curtiu deve aumentar +1 n
 ## Status
 
 **APROVADO**
+

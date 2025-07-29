@@ -54,3 +54,4 @@ O modal de login deve sumir, permanecendo na tela de heróis e o botão "Login" 
 ## Status
 
 **APROVADO**  
+
