@@ -8,11 +8,16 @@
 **Tipo de teste:** Funcional / Positivo  
 
 
-## Dados de entrada:
+
+## Dados de entrada
+
 **Login:** admin@test.com  
 **Senha:** test123  
 
-## Passos:
+
+
+## Passos
+
 1. Acessar a URL: http://localhost:3000/heroes  
 2. Clicar no botão de login  
 3. Inserir o e-mail válido  
@@ -20,13 +25,21 @@
 5. Clicar em "Entrar"  
 
 
-## Resultado Esperado:
+
+## Resultado Esperado
+
 O modal de login deve sumir, permanecendo na tela de heróis e o botão "Login" deve ser alterado para "Logout".  
 
-## Evidência:
+
+
+## Evidência
+
 ![Login com sucesso](../evidencias/login-sucesso-adm.png)  
 
-## Steps & Results:
+
+
+## Steps & Results
+
 **Given** que o usuário acessou a página de login do sistema  
 **And** clicou no botão "Login"  
 **When** inserir usuário e senha válidas  
@@ -36,5 +49,8 @@ O modal de login deve sumir, permanecendo na tela de heróis e o botão "Login" 
 **And** o botão "Login" deve ser alterado para "Logout"  
 **And** exibir as opções do perfil ADMIN  
 
-## Status:
+
+
+## Status
+
 **APROVADO**  
