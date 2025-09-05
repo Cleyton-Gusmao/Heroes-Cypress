@@ -29,7 +29,7 @@
   "homepage": "https://github.com/elylucas/cypress-heroes#readme",
   "devDependencies": {
     "concurrently": "^7.6.0",
-    "cypress": "^14.4.1",
+    "cypress": "^14.5.4",
     "rimraf": "^4.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
