@@ -46,7 +46,7 @@ O número de contratações no card do herói que o usuário contratou deve aume
 **Given** que o usuário acessou a página incial do sistema  
 **And** realizou o login usando credenciais válidas  
 **When** clicar no botão de contratar no card de um herói  
-**And** confirmar a ação clicando na opção "Yes" no pop-up de confirmação 
+**And** confirmar a ação clicando na opção "Yes" no pop-up de confirmação  
 **Then** a contagem de contratações do herói deve aumentar +1.  
 
 
