@@ -29,7 +29,7 @@
 
 ## Resultado Esperado
 
-O número de curtidas no card do herói que o usuário curtiu deve aumentar +1 na contagem  
+O número de curtidas(fans) no card do herói que o usuário curtiu deve aumentar +1 na contagem  
 
 
 
@@ -42,9 +42,9 @@ O número de curtidas no card do herói que o usuário curtiu deve aumentar +1 n
 ## Steps & Results
 
 **Given** que o usuário acessou a página incial do sistema  
-**And** realizou o login usando credenciais válidas 
+**And** realizou o login usando credenciais válidas  
 **When** clicar no botão de curtir herói dentro do card  
-**Then** a contagem de curtidas do herói deve aumentar +1.  
+**Then** a contagem de curtidas(fans) do herói deve aumentar +1  
 
 
 
