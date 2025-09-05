@@ -1,6 +1,6 @@
 # Exclusão de herói
 
-**ID:** 
+**ID:**  
 **Funcionalidade:** Excluir herói  
 **Título:** Exclusão de herói  
 **Pré-condições:** O usuário deve estar previamente logado no sistema com uma conta de administrador  

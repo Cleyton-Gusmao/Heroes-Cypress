@@ -1,16 +1,16 @@
 import VisitUserPage from "../../support/pages/visitUserPage";
 
-describe('', () => {
+describe('Realizar ações no modo visitante', () => {
     
     beforeEach(() => {
         cy.visit('http://localhost:3000')
     })
     
-    it('Curtir heroí no modo visitante', () => {
+    it('Tentar curtir heroí no modo visitante', () => {
         VisitUserPage.likeHeroVisit()
     });
 
-    it('Contratar heroí no modo visitante', () => {
+    it('Tentar contratar heroí no modo visitante', () => {
         VisitUserPage.hireHeroVisit()
     });
 })

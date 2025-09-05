@@ -1,8 +1,8 @@
 # Editar herói
 
-**ID:** 
+**ID:**  
 **Funcionalidade:** Editar herói  
-**Título:** Edição de herói 
+**Título:** Edição de herói  
 **Pré-condições:** O usuário deve estar previamente logado no sistema com uma conta de administrador  
 **Prioridade:** Alta  
 **Tipo de teste:** Funcional / Positivo  
